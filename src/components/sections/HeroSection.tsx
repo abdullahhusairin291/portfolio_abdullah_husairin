@@ -46,7 +46,7 @@ export const HeroSection = () => {
             <div className="absolute inset-0 translate-x-5 translate-y-5 rounded-3xl bg-primary/10" />
             <div className="relative h-72 w-72 overflow-hidden rounded-3xl shadow-2xl sm:h-80 sm:w-80">
               <img
-                src="/my_logo.jpg"
+                src="/foto.png"
                 alt="Abdullah Husairin"
                 className="h-full w-full object-cover"
               />
