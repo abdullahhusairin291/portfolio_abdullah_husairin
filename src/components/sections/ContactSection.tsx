@@ -35,7 +35,7 @@ export const ContactSection = () => {
           </a>
 
           <a
-            href="https://linkedin.com/in/username-kamu"
+            href="https://www.linkedin.com/in/abdullah-husairin/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-border bg-bg px-6 py-3 text-sm font-semibold text-text transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:text-primary"

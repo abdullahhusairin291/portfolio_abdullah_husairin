@@ -36,7 +36,7 @@ export const AboutSection = () => {
         </a>
 
         <a
-          href="https://linkedin.com/in/username-kamu"
+          href="https://www.linkedin.com/in/abdullah-husairin/"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex h-11 w-11 items-center justify-center rounded-full border border-border bg-bg text-text transition-all duration-300 hover:-translate-y-1 hover:bg-primary hover:text-white"
