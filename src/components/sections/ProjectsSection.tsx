@@ -13,7 +13,7 @@ export const ProjectsSection = () => {
       description:
         "Dashboard admin untuk manajemen usaha cuci kendaraan yang mencakup pengelolaan data kendaraan, karyawan, dan keuangan. Berkontribusi dalam pengembangan modul CRUD serta struktur frontend yang terorganisir dan scalable.",
       image: "/images/projects/autocare.png",
-      tech: ["React", "TypeScript", "REST API"],
+      tech: ["Next.js", "TypeScript", "REST API"],
       liveUrl: "https://autocare.kasprima.co.id/",
     },
     {
