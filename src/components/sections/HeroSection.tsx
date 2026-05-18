@@ -10,18 +10,20 @@ export const HeroSection = () => {
       <div className="relative grid items-center gap-12 lg:grid-cols-2">
         <div>
           <p className="mb-3 text-sm font-semibold text-text-muted">
-            Frontend Developer
+            Fullstack Developer & Digital Marketing
           </p>
 
           <h1 className="mb-5 text-3xl leading-[1.05] font-bold tracking-tight text-primary sm:text-5xl">
-            Halo, saya <br />
-            Abdullah Husairin.
+            Hi, I'm Abdullah Husairin.
           </h1>
 
           <p className="mb-8 max-w-xl text-base text-text-muted sm:text-lg">
-            Membangun aplikasi web modern dengan arsitektur yang rapi, performa
-            tinggi, dan pengalaman pengguna yang menarik menggunakan React dan
-            Next.js.
+            Semester 8 Computer Science student at Universitas Ibn Khaldun Bogor
+            with 2+ years of experience as a Fullstack Web Developer.
+            Experienced in building modern web applications using React,
+            Next.js, and Spring Boot, with strong focus on performance, clean
+            architecture, and SEO optimization. Also skilled in Digital
+            Marketing and Content Creation.
           </p>
 
           <div className="flex flex-wrap gap-3">
@@ -29,14 +31,14 @@ export const HeroSection = () => {
               href="#proyek"
               className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-primary-hover"
             >
-              Lihat Proyek
+              View My Projects
             </a>
 
             <a
               href="#contact"
               className="rounded-full border border-border bg-bg px-6 py-3 text-sm font-semibold text-text transition hover:bg-bg-soft"
             >
-              Hubungi Saya
+              Contact Me
             </a>
           </div>
         </div>

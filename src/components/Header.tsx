@@ -73,10 +73,11 @@ export default function Header() {
 
 function NavLinks({ onClick }: { onClick?: () => void }) {
   const links = [
-    { label: "Tentang", href: "#tentang" },
+    { label: "About", href: "#about" },
+    { label: "Experience", href: "#experience" },
     { label: "Skills", href: "#skills" },
     { label: "Proyek", href: "#proyek" },
-    { label: "Kontak", href: "#contact" },
+    { label: "Contact", href: "#contact" },
   ];
 
   return (

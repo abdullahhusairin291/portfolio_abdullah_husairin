@@ -1,26 +1,46 @@
-import { Layout, Server, Wrench } from "lucide-react";
+import { Layout, Server, Database, TrendingUp } from "lucide-react";
 
 const skillGroups = [
   {
     title: "Frontend",
     icon: Layout,
     skills: [
-      "React",
+      "React.js",
       "Next.js",
       "TypeScript",
-      "TanStack Router",
       "Tailwind CSS",
+      "Bootstrap",
+      "HTML/CSS",
     ],
   },
   {
-    title: "API & Integration",
+    title: "Backend & Database",
     icon: Server,
-    skills: ["REST API", "Node.js", "Sanity CMS", "Clerk Auth"],
+    skills: ["Java", "Spring Boot", "JPA", "RESTful API", "MySQL"],
   },
   {
-    title: "Tools & Workflow",
-    icon: Wrench,
-    skills: ["Git & GitHub", "Postman", "Vercel", "Figma"],
+    title: "Tools & Deployment",
+    icon: Database,
+    skills: [
+      "Git & GitHub",
+      "Vercel",
+      "Railway",
+      "Sanity CMS",
+      "DBeaver",
+      "Payment Gateway",
+    ],
+  },
+  {
+    title: "Digital Marketing",
+    icon: TrendingUp,
+    skills: [
+      "Meta Ads (IG & FB)",
+      "TikTok Ads",
+      "Content Strategy",
+      "Video Production",
+      "SEO Optimization",
+      "Performance Reporting",
+    ],
   },
 ];
 
@@ -33,20 +53,20 @@ export const SkillsSection = () => {
       <div className="relative">
         <div className="pointer-events-none absolute -top-20 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl" />
 
-        <p className="mb-3 text-sm font-semibold text-text-muted">Keahlian</p>
+        <p className="mb-3 text-sm font-semibold text-text-muted">Skills</p>
 
         <h2 className="mb-14 text-3xl font-bold tracking-tight text-text sm:text-4xl">
-          Teknologi & Tools yang Saya Gunakan
+          Technologies & Expertise
         </h2>
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {skillGroups.map((group) => {
             const Icon = group.icon;
 
             return (
               <div
                 key={group.title}
-                className="group relative rounded-2xl border border-border bg-bg p-6 transition-all duration-300 hover:-translate-y-2 hover:border-primary hover:shadow-xl hover:shadow-primary/10"
+                className="group relative rounded-2xl border border-border bg-bg p-6 transition-all duration-300 hover:-translate-y-2 hover:border-primary hover:shadow-xl hover:shadow-primary/10 hover:cursor-pointer"
               >
                 <div className="mb-6 flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary transition group-hover:bg-primary group-hover:text-white">

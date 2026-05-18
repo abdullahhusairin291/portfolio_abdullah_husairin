@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github, Phone } from "lucide-react";
 
 export const ContactSection = () => {
   return (
@@ -11,17 +11,17 @@ export const ContactSection = () => {
         <div className="pointer-events-none absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl" />
 
         <p className="mb-3 text-sm font-semibold text-text-muted">
-          Mari Terhubung
+          Get In Touch
         </p>
 
         <h2 className="mb-6 text-3xl font-bold tracking-tight text-text sm:text-4xl">
-          Tertarik Bekerja Sama?
+          Let's Work Together
         </h2>
 
         <p className="mx-auto mb-10 max-w-2xl text-base text-text-muted sm:text-lg">
-          Saya terbuka untuk peluang kolaborasi, freelance, maupun full-time
-          position sebagai Frontend Developer. Jangan ragu untuk menghubungi
-          saya.
+          I'm currently open to new opportunities in Fullstack Development,
+          Freelance projects, and Digital Marketing collaborations. Feel free to
+          reach out if you have an exciting project or opportunity.
         </p>
 
         {/* CTA Buttons */}
@@ -31,7 +31,7 @@ export const ContactSection = () => {
             className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-primary-hover hover:shadow-lg hover:shadow-primary/20"
           >
             <Mail size={16} />
-            Kirim Email
+            Send Email
           </a>
 
           <a
@@ -52,6 +52,14 @@ export const ContactSection = () => {
           >
             <Github size={16} />
             GitHub
+          </a>
+
+          <a
+            href="tel:+6289667390903"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-bg px-6 py-3 text-sm font-semibold text-text transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:text-primary"
+          >
+            <Phone size={16} />
+            +62 896-6739-0903
           </a>
         </div>
       </div>

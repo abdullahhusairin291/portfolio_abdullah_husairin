@@ -3,25 +3,34 @@ import { Github, Linkedin, Mail } from "lucide-react";
 export const AboutSection = () => {
   return (
     <section
-      id="tentang"
+      id="about"
       className="scroll-mt-24 mt-12 rounded-4xl bg-bg-soft px-6 py-12 sm:px-10 sm:py-16"
     >
-      <p className="mb-3 text-sm font-semibold text-text-muted">Tentang Saya</p>
+      <p className="mb-3 text-sm font-semibold text-text-muted">About Me</p>
 
       <h2 className="mb-6 text-3xl font-bold tracking-tight text-text sm:text-4xl">
-        Membangun Produk yang Terstruktur dan Menarik
+        Fullstack Developer & Digital Marketing
       </h2>
 
       <div className="space-y-6 text-base leading-relaxed text-text-muted sm:text-lg">
         <p>
-          Saya adalah seorang frontend developer yang berfokus pada pembangunan
-          aplikasi web yang terstruktur, scalable, dan nyaman digunakan.
+          I am a Semester 8 Computer Science student at Universitas Ibn Khaldun
+          Bogor with over 2 years of hands-on experience as a Fullstack Web
+          Developer.
         </p>
 
         <p>
-          Berpengalaman menggunakan React dan Next.js dalam membangun dashboard,
-          sistem terintegrasi API, serta website berbasis CMS dengan desain
-          antarmuka modern dan intuitif.
+          I specialize in building modern, high-performance web applications
+          using React, Next.js, and Spring Boot. Experienced in developing
+          complete solutions — from responsive frontends and RESTful APIs to
+          backend systems and cloud deployments.
+        </p>
+
+        <p>
+          In addition to development, I also have strong experience in Digital
+          Marketing, including content strategy, short-form video production,
+          Meta Ads (Instagram & Facebook), and TikTok Ads — helping businesses
+          grow their online presence and generate sales.
         </p>
       </div>
 

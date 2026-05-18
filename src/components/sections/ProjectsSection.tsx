@@ -1,50 +1,43 @@
 export const ProjectsSection = () => {
   const projects = [
     {
-      title: "POS & Billing System",
+      title: "AutoCare Web Application",
       description:
-        "Aplikasi POS modern dengan pengelolaan transaksi, manajemen pesanan, dan integrasi API real-time. Dibangun dengan arsitektur frontend yang scalable dan maintainable.",
-      image: "/images/projects/booking.png",
-      tech: ["React", "TypeScript", "TanStack", "REST API", "Payment Gateaway"],
-      liveUrl: "https://beranda-kahyangan.kasprima.co.id/",
-    },
-    {
-      title: "Autocare Dashboard",
-      description:
-        "Dashboard admin untuk manajemen usaha cuci kendaraan yang mencakup pengelolaan data kendaraan, karyawan, dan keuangan. Berkontribusi dalam pengembangan modul CRUD serta struktur frontend yang terorganisir dan scalable.",
+        "Contributed to the development of a fullstack web application for vehicle care business using Agile/Scrum methodology. Implemented CRUD operations and responsive frontend interfaces.",
       image: "/images/projects/autocare.png",
-      tech: ["Next.js", "TypeScript", "REST API"],
+      tech: ["Next.js", "TypeScript", "Spring Boot", "MySQL", "REST API"],
       liveUrl: "https://autocare.kasprima.co.id/",
     },
     {
-      title: "Website Dealer Motor Yamaha",
+      title: "QR-Based POS System",
       description:
-        "Website dealer berbasis Next.js dengan integrasi CMS serta fitur chatbot berbasis OpenRouter untuk meningkatkan interaksi pengguna.",
+        "Built a modern QR-based Point of Sale system for a restaurant. Customers can scan QR code, browse menu, and complete payment directly through the web application.",
+      image: "/images/projects/booking.png",
+      tech: ["React", "Spring Boot", "MySQL", "Payment Gateway"],
+      liveUrl: "https://beranda-kahyangan.kasprima.co.id/",
+    },
+    {
+      title: "Yamaha Dealer Website",
+      description:
+        "Developed and maintained the official website for Yamaha motorcycle dealer. Upgraded from React to Next.js with Sanity CMS, chatbot integration, payment gateway, and achieved #2 Google ranking for 'Yamaha Depok'.",
       image: "/images/projects/yamaha.png",
-      tech: [
-        "Next.js",
-        "Tailwind",
-        "Sanity CMS",
-        "OpenRouter API",
-        "EmailJS",
-        "Clerk",
-      ],
+      tech: ["Next.js", "Sanity CMS", "React Helmet", "SEO", "Payment Gateway"],
       liveUrl: "https://store.yamahahoky.com/",
     },
     {
-      title: "Sistem Informasi Desa",
+      title: "Village Information System",
       description:
-        "Website profil desa berbasis React JS dengan pengelolaan konten dinamis melalui Sanity CMS untuk memudahkan publikasi informasi dan transparansi data.",
+        "Built a dynamic village profile website with content management system, allowing easy information publishing and public data transparency.",
       image: "/images/projects/desa.png",
-      tech: ["React JS", "Tailwind", "Sanity CMS"],
+      tech: ["React.js", "Tailwind CSS", "Sanity CMS"],
       liveUrl: "https://kelurahan-lawanggintung.vercel.app/",
     },
     {
-      title: "Undangan Pernikahan",
+      title: "Wedding Invitation Website",
       description:
-        "Landing page undangan pernikahan yang dibangun menggunakan HTML, CSS, dan JavaScript dengan fokus pada desain visual dan responsivitas..",
+        "Elegant and responsive digital wedding invitation with beautiful animations and user-friendly interface.",
       image: "/images/projects/wedding.png",
-      tech: ["HTML", "CSS", "Javascript"],
+      tech: ["HTML", "CSS", "JavaScript"],
       liveUrl: "https://wedding-phi-murex.vercel.app/",
     },
   ];
@@ -55,11 +48,11 @@ export const ProjectsSection = () => {
       className="scroll-mt-24 mt-12 rounded-4xl bg-bg-soft px-6 py-12 sm:px-10 sm:py-16"
     >
       <p className="mb-3 text-sm font-semibold text-text-muted">
-        Proyek Pilihan
+        Featured Projects
       </p>
 
       <h2 className="mb-10 text-3xl font-bold tracking-tight text-text sm:text-4xl">
-        Beberapa Proyek yang Pernah Saya Kerjakan
+        Selected Projects I've Worked On
       </h2>
 
       <div className="grid gap-8 md:grid-cols-2">
@@ -103,7 +96,7 @@ export const ProjectsSection = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center rounded-full bg-primary px-4 py-2 text-xs font-semibold text-white transition hover:bg-primary-hover"
                 >
-                  Lihat Website
+                  Visit Website
                 </a>
               </div>
             </div>
