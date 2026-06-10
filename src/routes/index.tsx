@@ -10,7 +10,7 @@ export const Route = createFileRoute("/")({ component: App });
 
 function App() {
   return (
-    <main className="px-4 py-8 bg-gray-200">
+    <main className="relative z-10 px-4 py-8">
       <div className="max-w-6xl mx-auto">
         <HeroSection />
         <AboutSection />
