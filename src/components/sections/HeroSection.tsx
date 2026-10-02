@@ -197,8 +197,8 @@ export const HeroSection = () => {
             className="mb-8 max-w-xl text-base text-text-muted sm:text-lg"
             style={{ opacity: 0 }}
           >
-            Semester 8 Computer Science student at Universitas Ibn Khaldun Bogor
-            with 2+ years of experience as a Fullstack Web Developer.
+            Computer Science graduate (Cum Laude) from Universitas Ibn Khaldun
+            Bogor with 2+ years of experience as a Fullstack Web Developer.
             Experienced in building modern web applications using React,
             Next.js, and Spring Boot, with strong focus on performance, clean
             architecture, and SEO optimization. Also skilled in Digital
@@ -233,19 +233,16 @@ export const HeroSection = () => {
           style={{ opacity: 0 }}
         >
           <div className="relative">
-            {/* Particle canvas */}
             <canvas
               ref={canvasRef}
               className="pointer-events-none absolute inset-0 z-10 h-full w-full"
               style={{ borderRadius: "1.5rem" }}
             />
 
-            {/* Glow ring */}
-            <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-primary/30 via-transparent to-primary/10 blur-xl" />
+            <div className="absolute -inset-3 rounded-4xl bg-linear-to-br from-primary/30 via-transparent to-primary/10 blur-xl" />
 
-            {/* Rotating border */}
             <div
-              className="absolute -inset-[3px] rounded-3xl"
+              className="absolute -inset-0.75 rounded-3xl"
               style={{
                 background:
                   "conic-gradient(from 0deg, #14b8a6, transparent, #14b8a6, transparent, #14b8a6)",
@@ -253,7 +250,6 @@ export const HeroSection = () => {
               }}
             />
 
-            {/* Card with tilt */}
             <div
               ref={cardRef}
               className="relative z-10 h-72 w-72 overflow-hidden rounded-3xl shadow-2xl sm:h-80 sm:w-80"
@@ -264,8 +260,7 @@ export const HeroSection = () => {
                 alt="Abdullah Husairin"
                 className="h-full w-full object-cover"
               />
-              {/* Overlay shimmer */}
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-primary/20 via-transparent to-transparent" />
             </div>
           </div>
         </div>

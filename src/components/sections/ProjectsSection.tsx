@@ -11,40 +11,38 @@ const projects = [
     description:
       "Contributed to the development of a fullstack web application for vehicle care business using Agile/Scrum methodology. Implemented CRUD operations and responsive frontend interfaces.",
     image: "/images/projects/autocare.png",
-    tech: ["Next.js", "TypeScript", "Spring Boot", "MySQL", "REST API"],
+    tech: ["Next.js", "TypeScript", "REST API"],
     liveUrl: "https://autocare.kasprima.co.id/",
   },
   {
-    title: "QR-Based POS System",
+    title: "QR-Based POS System + Kichen Display",
     description:
       "Built a modern QR-based Point of Sale system for a restaurant. Customers can scan QR code, browse menu, and complete payment directly through the web application.",
-    image: "/images/projects/booking.png",
-    tech: ["React", "Spring Boot", "MySQL", "Payment Gateway"],
-    liveUrl: "https://beranda-kahyangan.kasprima.co.id/",
+    image: "/images/projects/pos.png",
+    tech: [
+      "React",
+      "Tanstack Query",
+      "Payment Gateway",
+      "Tailwind CSS",
+      "WebSocket",
+    ],
+    liveUrl: "https://kawah-putih.vercel.app/",
   },
   {
     title: "Yamaha Dealer Website",
     description:
       "Developed and maintained the official website for Yamaha motorcycle dealer. Upgraded from React to Next.js with Sanity CMS, achieved #2 Google ranking for 'Yamaha Depok'.",
     image: "/images/projects/yamaha.png",
-    tech: ["Next.js", "Sanity CMS", "React Helmet", "SEO", "Payment Gateway"],
-    liveUrl: "https://store.yamahahoky.com/",
+    tech: ["Next.js", "Sanity CMS", "OpenRouter", "Payment Gateway"],
+    liveUrl: "https://yamaha-hoky-store-skripsi.vercel.app/",
   },
   {
-    title: "Village Information System",
+    title: "Arsyad Yusuf and Partners",
     description:
-      "Built a dynamic village profile website with content management system, allowing easy information publishing and public data transparency.",
-    image: "/images/projects/desa.png",
-    tech: ["React.js", "Tailwind CSS", "Sanity CMS"],
-    liveUrl: "https://kelurahan-lawanggintung.vercel.app/",
-  },
-  {
-    title: "Wedding Invitation Website",
-    description:
-      "Elegant and responsive digital wedding invitation with beautiful animations and user-friendly interface.",
-    image: "/images/projects/wedding.png",
-    tech: ["HTML", "CSS", "JavaScript"],
-    liveUrl: "https://wedding-phi-murex.vercel.app/",
+      "Building a dynamic corporate profile website with a content management system that enables the company to easily manage content and employees.",
+    image: "/images/projects/ayp.png",
+    tech: ["Next.js", "Tailwind CSS", "Sanity CMS"],
+    liveUrl: "https://aypfirm.id/",
   },
 ];
 
@@ -118,7 +116,7 @@ export const ProjectsSection = () => {
         style={{ opacity: 0 }}
       >
         <span className="inline-block h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-        Featured Projects
+        Project Website
       </p>
 
       <h2
@@ -139,7 +137,6 @@ export const ProjectsSection = () => {
             className="group relative overflow-hidden rounded-2xl border border-white/20 transition-all duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/10"
             style={{ background: "rgba(255,255,255,0.08)", opacity: 0 }}
           >
-            {/* Image */}
             <div className="relative h-52 w-full overflow-hidden">
               <img
                 src={project.image}
@@ -147,9 +144,8 @@ export const ProjectsSection = () => {
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               {/* Image overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-              {/* Visit button on hover */}
               <a
                 href={project.liveUrl}
                 target="_blank"

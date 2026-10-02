@@ -6,31 +6,31 @@ gsap.registerPlugin(ScrollTrigger);
 
 const experiences = [
   {
-    position: "Fullstack Web Developer",
-    company: "PT KAS Autocare",
+    position: "Frontend Developer & Digital Marketing",
+    company: "PT Kasprima",
     period: "2025 - Present",
     type: "Freelance",
     description:
       "Developing and maintaining fullstack web applications with focus on modern architecture and user experience.",
     achievements: [
-      "Contributed to AutoCare web application development using Agile/Scrum methodology",
-      "Built a QR-based POS system for restaurant clients — scan QR, browse menu, and complete payment through web",
-      "Developed fullstack applications using Spring Boot, MySQL, and deployed to Railway",
-      "Managed digital marketing campaigns (Meta Ads & TikTok Ads) for multiple clients including barbershop, reflexology, and café",
+      "Collaborated on the development of the AutoCare web application (a car wash management system) using Agile/Scrum methodology and Taiga for project management; handled CRUD operations and UI slicing on the frontend while learning to implement clean architecture (joined during the final project phase, approximately the last two months).",
+      "Developed a QR-based POS system (integrated with the Odoo API) for two restaurant clients, Palawi and Beranda Kahyangan, enabling customers to scan a QR code, select menu items, and complete payments via the web (Beranda Kahyangan is currently live in production).",
+      "Developed and managed three WordPress websites end-to-end (Relax Q, Altop Barber, and Philosqopique), encompassing both website development and digital marketing activities such as content planning, video production, and weekly reporting for each client.",
+      "Built an internal website for Kasprima using Odoo and developed a website for Rute Kebangsaan (a large community) as part of a strategic partnership where Kasprima provided web development services for promotional purposes, creating potential for future project referrals through the community network.",
     ],
   },
   {
-    position: "Frontend Developer & Digital Marketing",
+    position: "Digital Marketing & Web Development",
     company: "PT Hoky Mitra Sejati",
     period: "2023 - 2025",
     type: "Full-time",
     description: "Official Yamaha Motorcycle Dealer in Depok.",
     achievements: [
-      "Built and maintained company website using React.js and later upgraded to Next.js with Sanity CMS",
-      "Achieved #2 Google ranking for keyword 'Yamaha Depok' through SEO optimization",
-      "Integrated chatbot, payment gateway, and dynamic content management",
-      "Executed content strategy and social media campaigns that generated cross-border sales of 10+ units (nearly IDR 10 million in profit)",
-      "Produced short-form videos and led live TikTok sessions to drive traffic and leads",
+      "Developed and maintained yamahahoky.com using React.js, a corporate profile website showcasing the dealership and motorcycle catalog.",
+      "Optimized SEO using React Helmet, Google Search Console, and Google Analytics, achieving a #2 ranking on Google for the keyword 'Yamaha Depok.'",
+      "Initiated and built store.yamahahoky.com (a marketplace subdomain) using Next.js and Sanity CMS; linked from the main site's product menu, this platform was approved by the owner to offer a more dynamic sales experience than the primary corporate site.",
+      "Established a web presence that consistently generated international leads, contributing to export sales— including the shipment of two containers to Africa.",
+      "Planned and executed social media content strategies, produced short-form videos, and led TikTok live sessions, driving local traffic and leads (Jabodetabek area).",
     ],
   },
 ];
@@ -140,12 +140,10 @@ export const ExperienceSection = () => {
       </h2>
 
       <div className="relative">
-        {/* Timeline line */}
         <div
           ref={timelineRef}
           className="absolute left-0 top-0 bottom-0 w-px bg-white/10 ml-3 hidden sm:block"
         >
-          {/* Progress fill */}
           <div
             ref={progressRef}
             className="w-full rounded-full"
@@ -167,7 +165,6 @@ export const ExperienceSection = () => {
               className="group relative sm:pl-10"
               style={{ opacity: 0 }}
             >
-              {/* Timeline dot */}
               <div className="absolute left-0 top-6 hidden sm:flex h-7 w-7 items-center justify-center rounded-full border-2 border-primary bg-primary/10 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
                 <div className="h-2 w-2 rounded-full bg-primary group-hover:bg-white transition-colors duration-300" />
               </div>
@@ -203,7 +200,7 @@ export const ExperienceSection = () => {
                 <ul className="mt-5 space-y-2.5">
                   {exp.achievements.map((achievement, i) => (
                     <li key={i} className="flex gap-3 text-sm text-text-muted">
-                      <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary/60" />
+                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary/60" />
                       {achievement}
                     </li>
                   ))}

@@ -185,14 +185,12 @@ export const AboutSection = () => {
       id="about"
       className="scroll-mt-24 mt-12 relative overflow-hidden rounded-4xl bg-bg-soft px-6 py-12 sm:px-10 sm:py-16"
     >
-      {/* Glow */}
       <div
         ref={glowRef}
         className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-primary/10 blur-3xl"
       />
       <div className="pointer-events-none absolute -left-20 bottom-0 h-56 w-56 rounded-full bg-primary/5 blur-3xl" />
 
-      {/* Badge */}
       <p
         ref={badgeRef}
         className="mb-3 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-primary uppercase"
@@ -202,7 +200,6 @@ export const AboutSection = () => {
         About Me
       </p>
 
-      {/* Heading */}
       <h2
         ref={headingRef}
         className="mb-8 text-3xl font-bold tracking-tight text-text sm:text-4xl"
@@ -212,7 +209,6 @@ export const AboutSection = () => {
         <span className="text-primary">Digital Marketing</span>
       </h2>
 
-      {/* Stats */}
       <div
         ref={statsRef}
         className="mb-10 grid grid-cols-3 gap-4 sm:gap-6"
@@ -223,7 +219,7 @@ export const AboutSection = () => {
             key={i}
             className="group relative overflow-hidden rounded-2xl border border-border bg-bg px-4 py-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/10"
           >
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            <div className="pointer-events-none absolute inset-0 bg-linear-to-br from-primary/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
             <p className="text-2xl font-bold text-primary sm:text-3xl">
               <CountUp target={stat.value} suffix={stat.suffix} />
             </p>
@@ -237,7 +233,7 @@ export const AboutSection = () => {
       {/* Paragraphs */}
       <div className="space-y-5 text-base leading-relaxed text-text-muted sm:text-lg">
         {[
-          "I am a Semester 8 Computer Science student at Universitas Ibn Khaldun Bogor with over 2 years of hands-on experience as a Fullstack Web Developer.",
+          "I am a Computer Science graduate (Cum Laude) from Universitas Ibn Khaldun Bogor with over 2 years of hands-on experience as a Fullstack Web Developer.",
           "I specialize in building modern, high-performance web applications using React, Next.js, and Spring Boot. Experienced in developing complete solutions — from responsive frontends and RESTful APIs to backend systems and cloud deployments.",
           "In addition to development, I also have strong experience in Digital Marketing, including content strategy, short-form video production, Meta Ads (Instagram & Facebook), and TikTok Ads — helping businesses grow their online presence and generate sales.",
         ].map((text, i) => (
@@ -276,7 +272,7 @@ export const AboutSection = () => {
           </a>
         ))}
 
-        <div className="ml-2 h-px flex-1 bg-gradient-to-r from-border to-transparent" />
+        <div className="ml-2 h-px flex-1 bg-linear-to-r from-border to-transparent" />
       </div>
     </section>
   );

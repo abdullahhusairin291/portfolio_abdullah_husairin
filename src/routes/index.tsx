@@ -2,6 +2,7 @@ import { AboutSection } from "#/components/sections/AboutSection";
 import { ContactSection } from "#/components/sections/ContactSection";
 import { ExperienceSection } from "#/components/sections/ExperienceSection";
 import { HeroSection } from "#/components/sections/HeroSection";
+import { MarketingSection } from "#/components/sections/MarketingSections";
 import { ProjectsSection } from "#/components/sections/ProjectsSection";
 import { SkillsSection } from "#/components/sections/SkillsSection";
 import { createFileRoute } from "@tanstack/react-router";
@@ -17,6 +18,7 @@ function App() {
         <ExperienceSection />
         <SkillsSection />
         <ProjectsSection />
+        <MarketingSection />
         <ContactSection />
       </div>
     </main>
