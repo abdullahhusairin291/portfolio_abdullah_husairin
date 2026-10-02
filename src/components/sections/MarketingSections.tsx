@@ -18,7 +18,7 @@ const campaigns = [
     role: "Content Planning & Video Production",
     description:
       "Planned content, produced short-form videos, and delivered weekly performance reports for a reflexology business.",
-    image: "/images/marketing/relax.PNG",
+    image: "/images/marketing/relax.png",
     focus: ["Content Planning", "Video Production", "Weekly Reporting"],
     // Isi kalau ada angka nyata, contoh: { label: "Followers", value: "+0" }
     results: [] as { label: string; value: string }[],
@@ -30,7 +30,7 @@ const campaigns = [
     role: "Content Planning & Video Production",
     description:
       "Handled content planning, video production, and weekly reporting for a barbershop client alongside its website.",
-    image: "/images/marketing/altop.PNG",
+    image: "/images/marketing/altop.png",
     focus: ["Content Planning", "Video Production", "Weekly Reporting"],
     results: [] as { label: string; value: string }[],
     url: "https://www.instagram.com/altopbarber",
@@ -41,7 +41,7 @@ const campaigns = [
     role: "Social Media & Live Selling",
     description:
       "Planned and executed social media content, produced short-form videos, and led TikTok live sessions to drive local traffic and leads in the Jabodetabek area.",
-    image: "/images/marketing/hoky.PNG",
+    image: "/images/marketing/hoky.png",
     focus: ["Short-form Video", "TikTok Live", "Lead Generation"],
     results: [] as { label: string; value: string }[],
     url: "https://www.instagram.com/gayatri.putrifood",
@@ -52,7 +52,7 @@ const campaigns = [
     role: "Content & Creative Officer",
     description:
       "Managed Instagram content and sales strategy for the Jamu Gendong Putri brand.",
-    image: "/images/marketing/jamu.PNG",
+    image: "/images/marketing/jamu.png",
     focus: ["Content Planning", "Campaign Management", "Design & Creative"],
     results: [] as { label: string; value: string }[],
     url: "https://www.tiktok.com/@hoky.motor",
