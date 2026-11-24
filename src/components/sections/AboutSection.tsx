@@ -81,7 +81,6 @@ export const AboutSection = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Badge
       gsap.fromTo(
         badgeRef.current,
         { opacity: 0, x: -20 },
@@ -97,7 +96,6 @@ export const AboutSection = () => {
         },
       );
 
-      // Heading
       gsap.fromTo(
         headingRef.current,
         { opacity: 0, y: 30 },
@@ -113,7 +111,6 @@ export const AboutSection = () => {
         },
       );
 
-      // Paragraphs stagger
       gsap.fromTo(
         parasRef.current,
         { opacity: 0, y: 24 },
@@ -130,7 +127,6 @@ export const AboutSection = () => {
         },
       );
 
-      // Stats
       gsap.fromTo(
         statsRef.current,
         { opacity: 0, y: 30, scale: 0.95 },
@@ -147,7 +143,6 @@ export const AboutSection = () => {
         },
       );
 
-      // Socials
       gsap.fromTo(
         socialsRef.current,
         { opacity: 0, y: 20 },
@@ -163,7 +158,6 @@ export const AboutSection = () => {
         },
       );
 
-      // Glow parallax
       gsap.to(glowRef.current, {
         y: -40,
         ease: "none",
@@ -230,7 +224,6 @@ export const AboutSection = () => {
         ))}
       </div>
 
-      {/* Paragraphs */}
       <div className="space-y-5 text-base leading-relaxed text-text-muted sm:text-lg">
         {[
           "I am a Computer Science graduate (Cum Laude) from Universitas Ibn Khaldun Bogor with over 2 years of hands-on experience as a Fullstack Web Developer.",
@@ -249,7 +242,6 @@ export const AboutSection = () => {
         ))}
       </div>
 
-      {/* Socials */}
       <div
         ref={socialsRef}
         className="mt-10 flex items-center gap-3"

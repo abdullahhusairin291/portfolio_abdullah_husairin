@@ -11,7 +11,6 @@ export const HeroSection = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
-  // Particles canvas
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -71,7 +70,6 @@ export const HeroSection = () => {
     };
   }, []);
 
-  // 3D tilt on photo
   useEffect(() => {
     const card = cardRef.current;
     if (!card) return;
@@ -114,7 +112,6 @@ export const HeroSection = () => {
     };
   }, []);
 
-  // Entrance animations
   useEffect(() => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ delay: 0.2 });
@@ -153,7 +150,6 @@ export const HeroSection = () => {
     return () => ctx.revert();
   }, []);
 
-  // Floating animation on photo
   useEffect(() => {
     gsap.to(cardRef.current, {
       y: -10,

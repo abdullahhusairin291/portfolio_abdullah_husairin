@@ -184,7 +184,6 @@ export const BackgroundCanvas = () => {
         ctx.lineWidth = 1.5;
         ctx.stroke();
 
-        // highlight kaca
         ctx.beginPath();
         ctx.arc(x - b.r * 0.25, y - b.r * 0.25, b.r * 0.15, 0, Math.PI * 2);
 
