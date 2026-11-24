@@ -13,6 +13,7 @@ const skillGroups = [
     skills: [
       "React.js",
       "Next.js",
+      "Tanstack",
       "TypeScript",
       "JavaScript",
       "Tailwind CSS",
@@ -27,7 +28,6 @@ const skillGroups = [
     skills: [
       "Java",
       "Spring Boot",
-      "JPA",
       "RESTful API",
       "JWT",
       "MySQL",
@@ -35,6 +35,8 @@ const skillGroups = [
       "MongoDB",
       "Node.js",
       "Express.js",
+      "PHP",
+      "CodeIgniter",
     ],
   },
   {
@@ -45,7 +47,7 @@ const skillGroups = [
       "Git & GitHub",
       "Vercel",
       "Railway",
-      "Niagahoster",
+      "Hostinger",
       "Sanity CMS",
       "WordPress",
       "Odoo",

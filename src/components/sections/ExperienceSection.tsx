@@ -9,7 +9,7 @@ const experiences = [
     position: "Frontend Developer & Digital Marketing",
     company: "PT Kasprima",
     period: "2025 - Present",
-    type: "Freelance",
+    type: "Full-time",
     description:
       "Developing and maintaining fullstack web applications with focus on modern architecture and user experience.",
     achievements: [
