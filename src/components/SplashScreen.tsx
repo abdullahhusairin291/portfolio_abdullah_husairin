@@ -19,7 +19,6 @@ export const SplashScreen = ({ onComplete }: SplashScreenProps) => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline();
 
-      // Letters drop in one by one
       tl.fromTo(
         lettersRef.current,
         { y: -60, opacity: 0, rotateX: 90 },
@@ -33,7 +32,6 @@ export const SplashScreen = ({ onComplete }: SplashScreenProps) => {
         },
       )
 
-        // Subtitle fade in
         .fromTo(
           subtitleRef.current,
           { opacity: 0, y: 10 },
@@ -41,7 +39,6 @@ export const SplashScreen = ({ onComplete }: SplashScreenProps) => {
           "-=0.2",
         )
 
-        // Progress bar fill
         .fromTo(
           progressRef.current,
           { scaleX: 0, transformOrigin: "left center" },
@@ -49,7 +46,6 @@ export const SplashScreen = ({ onComplete }: SplashScreenProps) => {
           "+=0.1",
         )
 
-        // Fade out whole splash
         .to(
           containerRef.current,
           {
@@ -73,14 +69,14 @@ export const SplashScreen = ({ onComplete }: SplashScreenProps) => {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#0f172a]"
+      className="fixed inset-0 z-9999 flex flex-col items-center justify-center bg-text"
     >
       {/* Glow background */}
-      <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[400px] w-[400px] rounded-full bg-teal-500/10 blur-[100px]" />
+      <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-100 w-100 rounded-full bg-teal-500/10 blur-[100px]" />
 
       <div className="relative flex flex-col items-center gap-4">
         {/* Name */}
-        <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white perspective-[800px]">
+        <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white perspective-midrange">
           {name.split("").map((char, i) => (
             <span
               key={i}
@@ -107,7 +103,7 @@ export const SplashScreen = ({ onComplete }: SplashScreenProps) => {
         {/* Progress bar */}
         <div
           ref={barRef}
-          className="mt-8 h-[2px] w-48 sm:w-64 rounded-full bg-white/10 overflow-hidden"
+          className="mt-8 h-0.5 w-48 sm:w-64 rounded-full bg-white/10 overflow-hidden"
         >
           <div
             ref={progressRef}

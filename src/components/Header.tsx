@@ -70,8 +70,7 @@ export default function Header() {
           </div>
         </nav>
 
-        {/* Progress bar */}
-        <div className="absolute bottom-0 left-0 h-[2px] w-full bg-transparent">
+        <div className="absolute bottom-0 left-0 h-0.5 w-full bg-transparent">
           <div
             className="h-full rounded-full"
             style={{
