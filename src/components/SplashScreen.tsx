@@ -66,52 +66,52 @@ export const SplashScreen = ({ onComplete }: SplashScreenProps) => {
 
   if (!show) return null;
 
-  return (
-    <div
-      ref={containerRef}
-      className="fixed inset-0 z-9999 flex flex-col items-center justify-center bg-text"
-    >
-      {/* Glow background */}
-      <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-100 w-100 rounded-full bg-teal-500/10 blur-[100px]" />
+ return (
+  <div
+    ref={containerRef}
+    className="fixed inset-0 z-9999 flex flex-col items-center justify-center bg-white dark:bg-zinc-950"
+  >
+    {/* Glow background */}
+    <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-100 w-100 rounded-full bg-teal-500/15 dark:bg-teal-500/10 blur-[100px]" />
 
-      <div className="relative flex flex-col items-center gap-4">
-        {/* Name */}
-        <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white perspective-midrange">
-          {name.split("").map((char, i) => (
-            <span
-              key={i}
-              ref={(el) => {
-                if (el) lettersRef.current[i] = el;
-              }}
-              className={`inline-block ${char === " " ? "w-4" : ""}`}
-              style={{ opacity: 0 }}
-            >
-              {char === " " ? "\u00A0" : char}
-            </span>
-          ))}
-        </h1>
+    <div className="relative flex flex-col items-center gap-4">
+      {/* Name */}
+      <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-zinc-900 dark:text-white perspective-midrange">
+        {name.split("").map((char, i) => (
+          <span
+            key={i}
+            ref={(el) => {
+              if (el) lettersRef.current[i] = el;
+            }}
+            className={`inline-block ${char === " " ? "w-4" : ""}`}
+            style={{ opacity: 0 }}
+          >
+            {char === " " ? "\u00A0" : char}
+          </span>
+        ))}
+      </h1>
 
-        {/* Subtitle */}
-        <p
-          ref={subtitleRef}
-          className="text-sm sm:text-base text-teal-400 font-medium tracking-widest uppercase"
-          style={{ opacity: 0 }}
-        >
-          Fullstack Developer & Digital Marketing
-        </p>
+      {/* Subtitle */}
+      <p
+        ref={subtitleRef}
+        className="text-sm sm:text-base text-teal-600 dark:text-teal-400 font-medium tracking-widest uppercase"
+        style={{ opacity: 0 }}
+      >
+        Fullstack Developer & Digital Marketing
+      </p>
 
-        {/* Progress bar */}
+      {/* Progress bar */}
+      <div
+        ref={barRef}
+        className="mt-8 h-0.5 w-48 sm:w-64 rounded-full bg-zinc-900/10 dark:bg-white/10 overflow-hidden"
+      >
         <div
-          ref={barRef}
-          className="mt-8 h-0.5 w-48 sm:w-64 rounded-full bg-white/10 overflow-hidden"
-        >
-          <div
-            ref={progressRef}
-            className="h-full w-full rounded-full bg-teal-400"
-            style={{ transform: "scaleX(0)", transformOrigin: "left center" }}
-          />
-        </div>
+          ref={progressRef}
+          className="h-full w-full rounded-full bg-teal-500 dark:bg-teal-400"
+          style={{ transform: "scaleX(0)", transformOrigin: "left center" }}
+        />
       </div>
     </div>
-  );
+  </div>
+);
 };
